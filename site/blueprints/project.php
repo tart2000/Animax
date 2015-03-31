@@ -18,7 +18,7 @@ fields:
     label: Code Vimeo (ex. 548839003)
     type: text
   team: 
-    label: Equipe 
+    label: Equipe (nom, séparés par des virgules. ex. John Doe, Michaël Bloomberg)
     type: text
   facilitator: 
     label: Facilitateur 
