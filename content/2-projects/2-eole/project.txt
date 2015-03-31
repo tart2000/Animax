@@ -1,0 +1,26 @@
+
+title:  EOLE
+
+----
+baseline: Application qui permet de solutionner les problèmes de l'entreprise en apportant des innovations sur les modes d'échanges d'informations et de réunions.
+
+----
+videolink: 114807559
+----
+team: Jean-Michel
+----
+facilitator: un super gars
+----
+
+Text: En quoi la solution répond à la performance de l’entreprise en libérant ses collaborateurs ?
+Elle permet à chacun :
+
+- d’exprimer ses « nuages »
+- de se mettre en responsabilité de faire progresser l’entreprise
+Chacun s’exprime, enrichi le débat et vote sans aucune censure.
+
+En quoi est-ce innovant ?
+
+- Parce que les collaborateurs qui le souhaitent (liberté) sont responsabilisés dans l’identification et le traitement des difficultés qu’ils rencontre.
+- Ils peuvent apporter leurs compétence sur un projet en dehors de leur métier-expertise.
+- La « météo » joue le rôle d’un reporting dynamique sur la perception qu’on les collaborateurs du positionnement de l’entreprise par rapport à son projet, ses valeurs.

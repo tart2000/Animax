@@ -1,0 +1,13 @@
+Title: ANIMAX : le lab du management
+
+----
+
+Author: Arthur Schmitt
+
+----
+
+Description: Atelier de création collaborative par prototypage rapide de conception de solutions innovantes pour transformer la management et créer durablement plus de confiance, d'autonomie, d'initiative, d'innovation, de coopération, de performance pour l'entreprise, de satisfaction et de bien-être pour l'Homme au travail.
+
+----
+
+Keywords: management,agile,hackathon,collectif
