@@ -10,7 +10,7 @@ Position: Dirigeante fondatrice de Corpoé, spécialiste de l’esprit pionnier 
 
 ---- 
 
-Site: http://corpoe.com/
+website: http://corpoe.com/
 
 ----
 

@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Member
+title: member
 pages: false
 files:
   sortable: true
@@ -14,7 +14,7 @@ fields:
   position:
     label: Description rapide 
     type: text
-  site: 
+  website: 
     label: Site personnel
     type: Url 
     width: 1/2
@@ -28,7 +28,7 @@ fields:
     width: 1/2
   tel: 
     label: Numéro de téléphone
-    type: text
+    type: tel
     width: 1/2
   text:
     label: Text

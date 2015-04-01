@@ -3,7 +3,7 @@
 title: Collectif
 pages: 
   template: member
-files: flase
+files: false
 fields:
   title:
     label: titre

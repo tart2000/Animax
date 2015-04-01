@@ -90,6 +90,9 @@ ul {
 .smb {
 	margin-bottom: 10px;
 }
+.mr {
+	margin-right: 10px;
+}
 .right {
 	float: right;
 }
@@ -131,6 +134,9 @@ height: 100%;
 }
 hr {
 	padding-bottom: 15px;
+}
+.member-content {
+	margin-top: 15px;
 }
 
 /*	################################################################
