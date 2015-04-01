@@ -4,18 +4,20 @@
             <div class="col-sm-5">
                 <h4>A propos</h4>
                 <div class="hline-w"></div>
-                <p>{{ site.about }}</p>
-                <p>{{ site.about_plus }}</p>
-                <p>Notre site est construit avec <a href="http://getkirby.com/">Kirby</a></p>
+                <p><?php echo $site->title() ?></p>
+                <p>Notre site est construit avec <a href="http://getkirby.com/" target="_blank">Kirby</a></p>
                 <p><a href="https://github.com/tart2000/animax"><i class="fa fa-github"></i></a></p>
             </div>
             <div class="col-sm-2 centered">
-                <img src="../assets/images/logo_Animax_nb.png" class="img-responsive">
+                <img src="/assets/images/logo_Animax_nb.png" class="img-responsive">
                 <div class="spacing"></div>
-                    <a href="https://www.facebook.com/labanimax" class="btn-social btn-outline"><i class="fa fa-facebook"></i></a>
-                    <a href="http://twitter.com/AnimaxLab" class="btn-social btn-outline"><i class="fa fa-twitter"></i></a>
-                    <a href="http://www.linkedin.com/company/animaxlab" class="btn-social btn-outline"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/labanimax" class="btn-social btn-outline"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/AnimaxLab" class="btn-social btn-outline"><i class="fa fa-twitter"></i></a>
+                <a href="http://www.linkedin.com/company/animaxlab" class="btn-social btn-outline"><i class="fa fa-linkedin"></i></a>
+                <div class="spacing"></div>
+                <a href="http://www.em-lyon.com/"><img src="/assets/images/emlyon.gif" class="img-responsive"></a>
                 </div>
+                
             <div class="col-sm-5">
                 <h4 style="text-align:right;">Contact</h4>
                 <p style="text-align:right;">

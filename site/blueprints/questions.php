@@ -1,12 +1,13 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Question
-pages: false
+pages: 
+    template: question
 files: false
 fields:
   title:
-    label: Question
+    label: Titre
     type:  text
-  answer:
-    label: Réponse
+  text:
+    label: Texte
     type:  text

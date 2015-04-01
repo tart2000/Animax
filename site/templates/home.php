@@ -36,6 +36,8 @@
 
     <?php snippet('projects') ?>
 
+    <?php snippet('questions') ?>
+
   </main>
 
 <?php snippet('footer') ?>
