@@ -1,4 +1,4 @@
-title: Arthur Schmitt
+Title: Arthur Schmitt
 
 ----
 
@@ -8,9 +8,9 @@ Boite: TinkTank
 
 Position: Lead prototypage. #Museomix #Fablabs #TechnoCultureClub
 
----- 
+----
 
-Site: http://arthurschmitt.com/
+Website: http://arthurschmitt.com/
 
 ----
 
@@ -26,5 +26,4 @@ Linkedin: http://ca.linkedin.com/in/arthurschmitt/en
 
 ----
 
-Text: 
-Ingénieur (ENSAM, Imperial College) et designer (RCA), Arthur est passionné par les nouvelles technologies et les pratiques collaboratives. Installé depuis un an à Montréal, il a auparavant participé à l’émergence des fablabs en France, notamment en contribuant à l'ouverture du premier fablab dans le centre de Paris.
+Text: Ingénieur (ENSAM, Imperial College) et designer (RCA), Arthur est passionné par les nouvelles technologies et les pratiques collaboratives. Installé depuis un an à Montréal, il a auparavant participé à l’émergence des fablabs en France, notamment en contribuant à l'ouverture du premier fablab dans le centre de Paris.

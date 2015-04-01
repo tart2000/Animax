@@ -2,14 +2,8 @@ Title: Home
 
 ----
 
-Text: Yay! If you are seeing this, the installation of Kirby worked. :)
+Text: 
 
-## Get started
+Ici, un texte de présentation sur Animax. 
 
-- Go to the (link: panel text: panel) to give Kirby's admin interface a try
-- Check out the (link: http://getkirby.com/docs text: docs) and start building your own site
-- Follow (twitter: @getkirby) on Twitter for updates
-- Visit the (link: http://getkirby.com/forum text: forum) to connect with other Kirby users
-- (link: http://getkirby.com/support text: Get in contact) if you need support.
-
-**Have fun with Kirby!**
+Rump andouille sirloin beef ribs pastrami jowl shoulder bacon tail capicola turducken pork chop swine ham t-bone. Chicken biltong short ribs ball tip meatball rump pancetta bacon alcatra pork belly jowl. Pork belly shankle ribeye, short ribs tri-tip sausage andouille fatback shoulder strip steak tongue short loin. Filet mignon flank meatloaf turkey bresaola pork. Cupim porchetta jowl filet mignon prosciutto drumstick capicola flank pork leberkas turkey doner corned beef short ribs sausage.

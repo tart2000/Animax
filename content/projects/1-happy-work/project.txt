@@ -1,26 +1,26 @@
-
-
-title:  Happy Work
+Title: Happy Work
 
 ----
 
-baseline: boite a outil open source permettant le développement du Happy Work dans les organisations (salariés, cadres, dirigeants).
+Baseline: boite a outil open source permettant le développement du Happy Work dans les organisations (salariés, cadres, dirigeants).
 
 ----
 
-videolink: 114807558
+Videolink: 114807558
 
 ----
 
-team: John Good, Fred Perry 
+Team: John Good, Fred Perry
 
 ----
 
-facilitator: Some Guy
+Facilitator: Some Guy
 
 ----
 
-Text: 1 – En quoi la solution répond à la performance de l’entreprise en libérant ses collaborateurs ?
+Text: 
+
+1 – En quoi la solution répond à la performance de l’entreprise en libérant ses collaborateurs ?
 C’est une solution :
 
 - Simple
@@ -59,3 +59,7 @@ Cette solution apporte de la bonne humeur et met du liant dans l’entreprise. A
 
 On aurait travaillé sur les modalités de concepts d’auto labellisation (interne, externe)
 On aurait fait rayonner le concept happy work en développant une communauté d’happy culteurs, en créant des manifestations fédératrices et en utilisant les réseaux sociaux pour partager les expériences au niveau international .
+
+----
+
+Tags: lyon-2014

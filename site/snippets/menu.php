@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand logo" href="<?php echo $site->url ?>" alt=""><img src="../assets/images/logo_Animax.png" class="img-responsive"></a>
+      <a class="navbar-brand logo" href="<?php echo $site->url ?>" alt=""><img src="/assets/images/logo_Animax.png" class="img-responsive"></a>
     </div>
     <div class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">

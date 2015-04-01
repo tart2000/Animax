@@ -1,17 +1,26 @@
-
-title:  Voyageo
-----
-baseline: Plateforme de partage et d’acquisition de connaissance de collaborateur à collaborateur.
-----
-videolink: 114807565
-----
-team: John Good 
-----
-facilitator: Some Guy
+Title: Voyageo
 
 ----
 
-Text: C'est une solution qui répond à la performance de l'entreprise en :
+Baseline: Plateforme de partage et d’acquisition de connaissance de collaborateur à collaborateur.
+
+----
+
+Videolink: 114807565
+
+----
+
+Team: John Good
+
+----
+
+Facilitator: Some Guy
+
+----
+
+Text: 
+
+C'est une solution qui répond à la performance de l'entreprise en :
 
 - leur redonnant l’envie d’apprendre et d’être acteur de leur évolution,
 - augmentant leurs compétences de chacun,
@@ -39,3 +48,7 @@ Si nous avions eu 48 h de plus :
 - Nous aurions prototypé entièrement l’appli
 - Nous aurions plus travaillé sur la gamification, et la dynamique des miles
 - Nous aurions été épuisés
+
+----
+
+Tags: lyon-2014

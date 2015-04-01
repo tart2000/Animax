@@ -15,6 +15,7 @@
           <div class="col-md-6">
             <div class="text">
               <h1><?php echo $page->title()->html() ?> - <?php echo $page->boite() ?></h1>
+              <hr>
               <strong><?php echo $page->position() ?></strong>
               <p><?php echo $page->text() ?></p>
             </div>

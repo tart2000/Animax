@@ -8,4 +8,8 @@ language: en
 role: admin
 token: 5ddab806028a6b24c64835c4aeac04973e6b94d1
 history:
-  - null
+  - editions/lyon-2014/meetings
+  - editions/lyon-2014/visiativ
+  - editions/lyon-2014/valpre
+  - editions/lyon-2014/erasme
+  - home

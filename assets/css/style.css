@@ -138,6 +138,9 @@ hr {
 .member-content {
 	margin-top: 15px;
 }
+.jumbotron p {
+	font-size: 1.5em;
+}
 
 /*	################################################################
 	1. GENERAL STRUCTURES
