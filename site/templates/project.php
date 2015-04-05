@@ -25,7 +25,9 @@
               <div class="spacing"></div>
               <p><b>Equipe :</b>
               <ul> 
-                <li><?php echo $page->team() ?></li>
+                <?php foreach ($page->team()->split(',') as $guy) : ?>
+                <li><?php echo $guy ?></li> 
+                <?php endforeach ?>
               </ul>
               </p>
 

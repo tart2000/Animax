@@ -37,9 +37,10 @@
         </div> <!--/row -->
     </div> <!--/container -->
 
-    <hr>
 
     <?php snippet('projects') ?>
+
+    <?php snippet('partenaires') ?>
 
     <?php snippet('questions') ?>
 
