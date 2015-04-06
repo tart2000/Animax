@@ -9,7 +9,9 @@
             </div>
             <div class="col-md-4 col-xs-12">
                 <h2 class="right"><i class="fa fa-calendar bmr"></i><?php echo $nextEdition->date('j', 'startDate') ?> - <?php echo $nextEdition->date('j M Y', 'endDate') ?></h2>
-                <h2 class="right"><a href="<?php echo $nextEdition->locationLink() ?>"><?php echo $nextEdition->location() ?></a></h2>
+                <?php if ($nextEdition->locationLink() != "") :?>
+                    <h2 class="right"><a href="<?php echo $nextEdition->locationLink() ?>"><i class="fa fa-map-marker bmr"></i><?php echo $nextEdition->location() ?></a></h2>
+                <?php endif ?>
                 <?php if ($nextEdition->inscriptions() != "") : ?>
                     <a href="<?php echo $nextEdition->inscriptions() ?>" class="btn btn-theme btn-lg right">Inscriptions</a>
                 <?php endif ?>

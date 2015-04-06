@@ -177,11 +177,11 @@ hr {
   color: #BBBAC0;
   text-align: center;
   cursor: pointer;
+  z-index: 100;
 }
 #next-edition {
   position: relative;
   bottom: 70px;
-  z-index: -1;	
 }
 
 /*	################################################################
