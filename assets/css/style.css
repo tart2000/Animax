@@ -90,11 +90,17 @@ ul {
 .mr {
 	margin-right: 10px;
 }
+.bmr {
+	margin-right: 20px;
+}
 .mb {
 	margin-bottom: 30px;
 }
 .pt {
 	padding-top: 15px;
+}
+.lpt {
+	padding-top: 40px;
 }
 .pb {
 	padding-bottom: 15px;
@@ -148,13 +154,34 @@ hr {
 	font-size: 1.5em;
 }
 #next-edition {
-	background-color: #FABC00;
+	background-color: #efefef;
 }
 .intro p {
 	line-height: 1.5em;
 	font-size: 1.5em;
   	color: #555555;
   	margin: 10px 0;
+}
+#godown {
+  position: relative;
+  bottom: 35px;
+  left: 50%;
+  width: 7rem;
+  height: 7rem;
+  margin-left: -35px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 3px solid #efefef;
+  font-size: 2.2rem;
+  line-height: 6.4rem;
+  color: #BBBAC0;
+  text-align: center;
+  cursor: pointer;
+}
+#next-edition {
+  position: relative;
+  bottom: 70px;
+  z-index: -1;	
 }
 
 /*	################################################################
