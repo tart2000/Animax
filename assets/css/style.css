@@ -59,9 +59,6 @@
     -o-background-size: cover;
     background-size: cover;
 }
-hr {
-	margin-bottom: 0px;
-}
 .spacer {
 	background-image: url("/assets/img/subtle_white_feathers.png");
 	height: 10px;
@@ -146,6 +143,7 @@ height: 100%;
 }
 hr {
 	padding-bottom: 15px;
+	border-top: 3px solid #eee;
 }
 .member-content {
 	margin-top: 15px;
@@ -183,6 +181,7 @@ hr {
   position: relative;
   bottom: 70px;
 }
+
 
 /*	################################################################
 	1. GENERAL STRUCTURES

@@ -6,7 +6,7 @@
 
 <?php snippet('nextedition') ?>
 
-<div class="container">
+<div class="container mb">
     <div class="row">
         <div class="col-md-8 col-md-offset-2 center">
             <h1>Animax, c’est LE laboratoire collaboratif qui innove en management !</h1>
@@ -25,14 +25,10 @@
     </div>
 </div>
 
+<hr>
+
 <?php snippet('pastedition') ?>
 
-    <?php snippet('projects') ?>
-
-    <?php snippet('partenaires') ?>
-
-    <?php snippet('questions') ?>
-
-
+<?php snippet('questions') ?>
 
 <?php snippet('footer') ?>
