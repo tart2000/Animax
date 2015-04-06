@@ -1,0 +1,33 @@
+Title: Deuxième édition
+
+----
+
+Text: Bacon ipsum dolor amet pork belly brisket tri-tip, porchetta alcatra prosciutto bresaola hamburger turducken tail spare ribs ham shankle sirloin. Cupim meatloaf sausage short ribs. Chicken pork chop kevin ham hock landjaeger andouille cupim short loin. Tongue ribeye biltong meatball t-bone, spare ribs cupim fatback chicken alcatra.
+
+----
+
+Location: 
+
+----
+
+Startdate: 2015-11-19
+
+----
+
+Enddate: 2015-11-20
+
+----
+
+Inscriptions: http://plouf.com
+
+----
+
+Projectlabel: lyon-2015
+
+----
+
+Vimeolink: 
+
+----
+
+Locationlink: 

@@ -42,9 +42,6 @@
     -o-background-size: cover;
 	background-size: cover;
 }
-.smb {
-	margin-bottom: 10px;
-}
 #thankswrap {
 	background-image: url("/assets/img/header_nous.jpg");
 	text-align:center;
@@ -93,6 +90,15 @@ ul {
 .mr {
 	margin-right: 10px;
 }
+.mb {
+	margin-bottom: 30px;
+}
+.pt {
+	padding-top: 15px;
+}
+.pb {
+	padding-bottom: 15px;
+}
 .right {
 	float: right;
 }
@@ -140,6 +146,15 @@ hr {
 }
 .jumbotron p {
 	font-size: 1.5em;
+}
+#next-edition {
+	background-color: #FABC00;
+}
+.intro p {
+	line-height: 1.5em;
+	font-size: 1.5em;
+  	color: #555555;
+  	margin: 10px 0;
 }
 
 /*	################################################################
@@ -256,7 +271,7 @@ a:focus {
 
 .btn-theme {
   background-color: #ffffff;
-  border-color: #ffffff;
+  border-color: #000000;
   margin: 4px;
 }
 .btn-theme:hover,

@@ -14,6 +14,11 @@ fields:
   location: 
     label: Endroit de l'événement
     type: text
+    width:1/2
+  locationLink:
+    label: Lien vers l'endroit
+    type: Url
+    width: 1/2
   startDate: 
     label: Date de départ
     type: date
