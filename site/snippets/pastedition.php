@@ -11,7 +11,7 @@
                         <?php if($image = $pastEdition->images()->sortBy('sort', 'asc')->first()): ?>
                             <img src="<?php echo $image->url() ?>" alt="<?php echo $pastEdition->title()->html() ?>" class="img-responsive">
                         <?php endif ?>
-                        <h2 class="right"><?php echo $pastEdition->location() ?> - <?php echo $pastEdition->date('j', 'startDate') ?> - <?php echo $pastEdition->date('j M Y', 'endDate') ?></h2>
+                        <h2 class="right"><?php echo $pastEdition->location() ?>, <?php echo $pastEdition->date('j', 'startDate') ?> - <?php echo $pastEdition->date('j M Y', 'endDate') ?></h2><br/>
                         <div class="clearfix"></div>
                         <p><?php echo $pastEdition->text()->kirbytext() ?></p>
                     </div>

@@ -4,15 +4,15 @@ title: Home
 pages: false
 fields:
   title:
-    label: Title
+    label: Titre
     type:  text
   pourquoi: 
     label: Pourquoi ?
-    type: text
+    type: textarea
   comment:
     label: Comment ?
-    type: text
+    type: textarea
   text:
-    label: Text
+    label: Texte de présentation
     type:  textarea
     size:  large

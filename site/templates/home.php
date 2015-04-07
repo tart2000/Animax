@@ -2,7 +2,7 @@
 
 <?php snippet('head') ?>
 
-<a href="#next-edition"><div id="godown" class="fa fa-arrow-down"></div></a>
+<div id="godown" class="fa fa-arrow-down"></div>
 
 <?php snippet('nextedition') ?>
 

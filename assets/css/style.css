@@ -65,9 +65,6 @@
 	width: 100%; 
 }
 
-ul {
-	margin-left: 40px;
-}
 
 .dmbutton .fa {
 	margin-right: 0px;
@@ -637,4 +634,115 @@ a.anchor{
 	padding-left: 10px;
 	padding-right: 10px;
 }
+/*--------------------
+Tabs ===============*/
+.nav-tabs {
+	border: 0;
+}
+
+.nav-tabs > li {
+	float: left;
+}
+
+.nav-tabs > li > a {
+	font-size: 2.2rem;
+	color: #bbbac0;
+	padding: 1rem 4rem;
+}
+
+.nav-tabs > li.active a{
+	background: #efefef;
+	border: 0;
+}
+.nav .nav-tabs ul {
+	margin-left: 0px !important;
+}
+.nav-tabs > li a:hover{
+	background: #efefef;
+	border: 0;
+}
+
+.nav-tabs > li > a {
+	border: 0;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #555555;
+  background-color: #efefef;
+  border: 0;
+  cursor: pointer;
+}
+
+
+
+/*--------------------
+Accordion ==========*/
+.accordion-group {
+	border-radius: 5px;
+	margin: 0 0 10px 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.accordion {
+	background: #efefef;
+	padding: 20px 40px;
+	overflow: hidden;
+}
+
+.accordion + .accordion {
+	border-top: 3px solid #ffffff;
+}
+
+.accordion-heading {
+	display: block;
+	position: relative;
+	min-height: 4rem;
+}
+
+.accordion-title {
+	min-height: 4rem;
+	margin: 0;
+    padding: 0.5rem 4rem 0 9rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #222222;
+}
+
+.accordion-title:first-child {
+	padding: 0.5rem 4rem 0 0;
+}
+
+.accordion-heading span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 3rem;
+	line-height: 4rem;
+	cursor: pointer;
+}
+
+.accordion.active span.fa-plus-circle:before {
+  content: "\f056";
+}
+
+.accordion-heading time {
+	float: left;
+	margin-right: 2rem;
+	padding: 0 1.5rem;
+	background: #bbbac0;
+	border-radius: 5px;
+	font-size: 1.6rem;
+	line-height: 4rem;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.accordion-body {
+	display: none;
+	padding-top: 20px;
+}
+
 
