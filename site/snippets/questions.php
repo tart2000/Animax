@@ -1,4 +1,4 @@
-<div class="container center mt">
+<div class="container center">
 
     <h3><?php echo page('questions')->title() ?></h3>
     <p><?php echo page('questions')->text() ?></p>

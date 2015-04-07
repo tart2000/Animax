@@ -15,6 +15,7 @@
                 <?php if ($nextEdition->inscriptions() != "") : ?>
                     <a href="<?php echo $nextEdition->inscriptions() ?>" class="btn btn-theme btn-lg right">Inscriptions</a>
                 <?php endif ?>
+                <div class="clearfix"></div>
             </div>
             <div class="col-md-7 intro">
                 <p><?php echo $nextEdition->text()->kirbytext() ?></p>

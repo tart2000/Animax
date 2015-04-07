@@ -6,7 +6,7 @@
 
         <div class="col-md-12 mb">
           <h1><?php echo $page->title()->html() ?></h1>
-          <h4><?php echo $page->text() ?></h4>
+          <p><?php echo $page->text() ?></p>
         </div>
 
         

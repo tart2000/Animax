@@ -22,6 +22,9 @@
         <div class="col-md-10 col-md-offset-1 intro">
             <p><?php echo $page->text()->kirbytext() ?></p>
         </div>
+        <div class="col-md-12 center">
+            <a href="/a-propos" class="btn btn-lg btn-theme">En savoir plus</a>
+        </div>
     </div>
 </div>
 

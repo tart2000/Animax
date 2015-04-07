@@ -15,7 +15,7 @@
                         <div class="clearfix"></div>
                         <p><?php echo $pastEdition->text()->kirbytext() ?></p>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-xs-12">
                         <div class="responsive-video">
                           <iframe src="//player.vimeo.com/video/<?php echo $pastEdition->Vimeolink() ?>?portrait=0" width="5" height="3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                       </div>
@@ -61,3 +61,4 @@
         <?php endif ?>
     <?php endforeach ?>
 </div>
+<hr>
