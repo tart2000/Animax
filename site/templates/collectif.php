@@ -9,14 +9,16 @@
           <p><?php echo $page->text() ?></p>
         </div>
 
-        
+        <?php $counter = 0 ?>        
         <?php foreach(page('collectif')->children()->limit(6)->shuffle() as $member): ?>
             <div class="col-md-6 collectif-item">
                 <div class="row">
                 <div class="col-sm-4">
                     <a href="<?php echo $member->url() ?>">
-                    <?php if($image = $member->images()->sortBy('sort', 'asc')->first()): ?>
-                    <img src="<?php echo $image->url() ?>" alt="<?php echo $member->title()->html() ?>" class="img-responsive collectif-img">
+                    <?php if($member->hasImages()): ?>
+                        <div class="collectif-img">
+                            <?php echo thumb($member->images()->first(), array('width'=>400, 'height'=>400, 'crop'=>true)) ?>
+                        </div>
                     <?php endif ?>
                     </a>
                 </div>
@@ -26,10 +28,14 @@
                     </a>
                     <hr>
                     <strong><?php echo $member->position()->excerpt(120) ?></strong></br>
-                    <a href="<?php echo $member->url() ?>">Plus -></a>
+                    <a href="<?php echo $member->url() ?>">Plus &rarr;</a>
                 </div>
                 </div>
-              </div>
+            </div>
+            <?php $counter++ ?>
+            <?php if ($counter%2 == 0) : ?>
+                <div class="clearfix"></div>
+            <?php endif ?>
         <?php endforeach ?>
         </div>
 

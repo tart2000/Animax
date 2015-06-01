@@ -4,12 +4,24 @@
     <div class="container mt">
         <div class="row">
           <div class="col-md-2 col-md-offset-2">
-            <img src="<?php echo $page->images()->first()->url() ?>" alt="<?php echo $page->title()->html() ?>" class="img-responsive collectif-img mt">
+              <?php if($page->hasImages()): ?>
+                  <div class="collectif-img">
+                      <?php echo thumb($page->images()->first(), array('width'=>400, 'height'=>400, 'crop'=>true)) ?>
+                  </div>
+              <?php endif ?>
             <div class="member-content">
-              <i class="fa fa-external-link mr"></i><a href="<?php echo $page->website() ?>" target="_blank"><?php echo $page->website()->uri() ?></a></br>
-              <i class="fa fa-linkedin mr"></i><a href="<?php echo $page->linkedin() ?>" target="_blank">LinkedIn</a></br>
-              <i class="fa fa-envelope mr"></i><a href="mailto:<?php echo $page->courriel() ?>" target="_blank">écrire</a></br>
-              <i class="fa fa-phone mr"></i><?php echo $page->tel() ?>
+              <?php if ($page->website() != '') : ?>
+                <i class="fa fa-external-link mr"></i><a href="<?php echo $page->website() ?>" target="_blank"><?php echo $page->website()->uri() ?></a></br>
+              <?php endif ?>
+              <?php if ($page->linkedin() != '') : ?>
+                <i class="fa fa-linkedin mr"></i><a href="<?php echo $page->linkedin() ?>" target="_blank">LinkedIn</a></br>
+              <?php endif ?>
+              <?php if ($page->courriel() != '') : ?>
+                <i class="fa fa-envelope mr"></i><a href="mailto:<?php echo $page->courriel() ?>" target="_blank">écrire</a></br>
+              <?php endif ?>
+              <?php if ($page->tel() != '') : ?>
+                <i class="fa fa-phone mr"></i><?php echo $page->tel() ?>
+              <?php endif ?>
             </div>
           </div>
           <div class="col-md-6">

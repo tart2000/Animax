@@ -50,10 +50,10 @@
           <nav class="" role="navigation">
             <ul class="pager">
               <?php if($prev = $page->prevVisible()): ?>
-              <li class="previous"><a href="<?php echo $prev->url() ?>">&larr; previous</a></li>
+              <li class="previous"><a href="<?php echo $prev->url() ?>">&larr; précédent</a></li>
               <?php endif ?>
               <?php if($next = $page->nextVisible()): ?>
-              <li class="next"><a href="<?php echo $next->url() ?>">next &rarr;</a></li>
+              <li class="next"><a href="<?php echo $next->url() ?>">suivant &rarr;</a></li>
               <?php endif ?>
             </ul>
           </nav>

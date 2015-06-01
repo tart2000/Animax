@@ -3,13 +3,9 @@
 username: tart2000
 email: tart2000design@gmail.com
 password: >
-  $2a$10$VONIoKvl.4J4VPc4hU0nu.1MZcuqHiaOtjn.AxLNwhaZUSK.c6sMS
-language: en
+  $2a$10$NutuqQ0zE1vt2lOp3J//.uUEUQHiLGWkuk6TSXqqsPUAzhQNYe3Fm
+language: fr
 role: admin
-token: a76b8c05e52ffc5311e6089deee2d1346d4c8c95
+token: 9a1fe1c401be8992af92ba3f7c1a5a23ee1fd038
 history:
-  - editions/deuxieme-edition
-  - editions/lyon-2014
-  - editions/lyon-2014/meetings
-  - editions/lyon-2014/visiativ
-  - editions/lyon-2014/valpre
+  - collectif/thierry-picq

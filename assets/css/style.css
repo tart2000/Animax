@@ -10,6 +10,17 @@
  My Modifications 
 ################################################################### */ 
 
+.navbar li:hover, .navbar li .active {
+	background-color: #efefef;
+}
+.nav li {
+	text-transform: uppercase;
+}
+.nav li a {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 .event-item img {
 	width: 100%;
 }
@@ -26,7 +37,7 @@
 }
 .logo {
 	position: relative;
-	top: -12px;
+	top: -7px;
 }
 .logo img:hover {
 	opacity:0.5;
@@ -88,6 +99,9 @@
 .mb {
 	margin-bottom: 30px;
 }
+.bmb {
+	margin-bottom: 45px;
+}
 .pt {
 	padding-top: 15px;
 }
@@ -103,9 +117,7 @@
 .center {
 	text-align: center;
 }
-.nav li {
-	text-transform: uppercase;
-}
+
 .responsive-video {
 position: relative;
 padding-bottom: 56.25%;
@@ -127,18 +139,18 @@ height: 100%;
 }
 .collectif-item {
 	margin-bottom: 15px;
-}
-.collectif-text {
+	margin-top: 15px;
 	position: relative;
-	left: -15px;
+	max-height: 250px; 
+}
+.collectif-text {	
 	padding-bottom: 15px;
 }
-.collectif-img {
+.collectif-img img {
 	border-radius: 5px;
 }
 hr {
-	padding-bottom: 15px;
-	border-top: 3px solid #eee;
+	border-top: 2px solid #eee;
 }
 .member-content {
 	margin-top: 15px;
@@ -255,8 +267,6 @@ a:focus {
 	BOOTSTRAP MODIFICATIONS & TWEAKS
 ################################################################# */
 .navbar {
-	min-height: 70px;
-	padding-top: 10px;
 	margin-bottom: 0px;
 	border-bottom: 1px solid #F4F4F4 !important;
 }

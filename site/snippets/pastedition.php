@@ -1,4 +1,4 @@
-<div id="past-edition" class="lpt pb">
+<div id="past-edition" class="lpt pb bmb">
     <?php $today=date('c'); ?>
     <?php foreach (page('editions')->children() as $pastEdition) : ?>
         <?php if ($pastEdition->startDate()->date('c') < $today) :?> 
@@ -11,7 +11,7 @@
                         <?php if($image = $pastEdition->images()->sortBy('sort', 'asc')->first()): ?>
                             <img src="<?php echo $image->url() ?>" alt="<?php echo $pastEdition->title()->html() ?>" class="img-responsive">
                         <?php endif ?>
-                        <h2 class="right"><?php echo $pastEdition->location() ?>, <?php echo $pastEdition->date('j', 'startDate') ?> - <?php echo $pastEdition->date('j M Y', 'endDate') ?></h2><br/>
+                        <h2><?php echo $pastEdition->location() ?>, <?php echo $pastEdition->date('j', 'startDate') ?> - <?php echo $pastEdition->date('j M Y', 'endDate') ?></h2><br/>
                         <div class="clearfix"></div>
                         <p><?php echo $pastEdition->text()->kirbytext() ?></p>
                     </div>
@@ -45,7 +45,7 @@
         <div class="container">
             <h4 class="center">Merci à nos partenaires, qui ont rendu cette édition possible    </h4>
             <div class="row">
-                <?php foreach ($pastEdition->children() as $partner) : ?>
+                <?php foreach ($pastEdition->children('partner') as $partner) : ?>
                     <div class="col-md-3 col-xs-6 col-sm-4 smt">
                         <a href="<?php echo $partner->partnerLink() ?>">
                         <?php if($image = $partner->images()->sortBy('sort', 'asc')->first()): ?>

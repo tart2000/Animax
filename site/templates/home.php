@@ -9,7 +9,7 @@
 <div class="container mb">
     <div class="row">
         <div class="col-md-8 col-md-offset-2 center">
-            <h1>Animax, c’est LE laboratoire collaboratif qui innove en management !</h1>
+            <h1><?php echo $page->baseline() ?></h1>
         </div>
         <div class="col-md-5 col-md-offset-1 intro">
             <h3>Pourquoi ?</h3>
@@ -23,7 +23,7 @@
             <p><?php echo $page->text()->kirbytext() ?></p>
         </div>
         <div class="col-md-12 center">
-            <a href="/a-propos" class="btn btn-lg btn-theme">En savoir plus</a>
+            <a href="/a-propos" class="btn btn-lg btn-theme mt">En savoir plus</a>
         </div>
     </div>
 </div>

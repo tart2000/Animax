@@ -1,4 +1,6 @@
-<div id="footerwrap">
+<div id="footerwrap" class="bmt">
+    <hr>
+
     <div class="container">
         <div class="row">
             <div class="col-sm-5">
@@ -11,9 +13,9 @@
             <div class="col-sm-2 centered">
                 <img src="/assets/images/logo_Animax_nb.png" class="img-responsive">
                 <div class="spacing"></div>
-                <a href="https://www.facebook.com/labanimax" class="btn-social btn-outline"><i class="fa fa-facebook"></i></a>
-                <a href="http://twitter.com/AnimaxLab" class="btn-social btn-outline"><i class="fa fa-twitter"></i></a>
-                <a href="http://www.linkedin.com/company/animaxlab" class="btn-social btn-outline"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/labanimax" class="btn-social btn-outline" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/AnimaxLab" class="btn-social btn-outline" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="http://www.linkedin.com/company/animaxlab" class="btn-social btn-outline" target="_blank"><i class="fa fa-linkedin"></i></a>
                 <div class="spacing"></div>
                 <a href="http://www.em-lyon.com/"><img src="/assets/images/emlyon.gif" class="img-responsive"></a>
                 </div>
