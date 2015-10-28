@@ -12,10 +12,19 @@
     <div class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">
         <?php foreach($pages->visible() as $p): ?>
-        <li>
-          <a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
-        </li>
+          <li>
+            <a <?php e($p->isOpen(), ' class="active"') ?> href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
+          </li>
         <?php endforeach ?>
+        <!-- bouton inscriptions -->
+        <?php $today=date('c'); ?>
+        <?php if ($nextEdition = page('editions')->children()->filterBy('startDate','>',$today)->first()) : ?>
+          <?php if ($nextEdition->inscriptions() != '') : ?>
+            <li class="register">
+              <a href="<?php echo $nextEdition->inscriptions() ?>" target="_blank">Inscriptions</a>
+            </li>
+          <?php endif ?>
+        <?php endif ?>
       </ul>
     </div><!--/.nav-collapse -->
   </div>

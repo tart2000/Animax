@@ -20,7 +20,9 @@
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-
+.navbar-fixed-top {
+    border-width: 0 0 0px;
+}
 .event-item img {
 	width: 100%;
 }
@@ -45,6 +47,7 @@
  	-moz-transition: opacity .5s ease-in-out;
   	-webkit-transition: opacity .5s ease-in-out;
 }
+
 #thankswrap {
 	background-image: url("/assets/img/header_nous.jpg");
 	text-align:center;
@@ -287,7 +290,6 @@ a:focus {
 ################################################################# */
 .navbar {
 	margin-bottom: 0px;
-	border-bottom: 1px solid #F4F4F4 !important;
 }
 
 .navbar-brand {
@@ -414,6 +416,15 @@ a:focus {
 	color: white;
 	font-weight: 400;
 	text-shadow: 0px 0px 12px rgba(0,0,0,0.6);
+}
+@media screen and (max-width: 480px) {
+	#headerwrap h3, h5 {
+		font-weight: 100;
+		font-size: 18px;
+	}
+	#headerwrap {
+		padding-top: 100px;
+	}
 }
 
 #headerwrap h1 {
@@ -751,6 +762,7 @@ Accordion ==========*/
 	background: #efefef;
 	padding: 20px 40px;
 	overflow: hidden;
+	list-style: none
 }
 
 .accordion + .accordion {
@@ -811,3 +823,7 @@ Accordion ==========*/
 	margin-right: auto;
 }
 
+.register a {
+	color: white !important; 
+	background-color: orange;
+}
