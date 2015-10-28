@@ -1,8 +1,8 @@
 <div id="portfoliowrap">
     <div class="container">
-        <h3>Projets</h3>
+        <h3><?php echo page('projets')->title() ?></h3>
         <div class="row">
-            <?php foreach(page('projects')->children()->visible()->limit(6) as $project): ?>
+            <?php foreach(page('projets')->children()->visible()->limit(6) as $project): ?>
                 <div class="col-md-4 col-sm-6">
                     <div class="project-thumb">
                         <a href="<?php echo $project->url() ?>">

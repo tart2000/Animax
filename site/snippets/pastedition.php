@@ -1,11 +1,10 @@
-<div id="past-edition" class="lpt pb bmb">
+<div id="past-edition" class="lpt pb bmb bpb">
     <?php $today=date('c'); ?>
-    <?php foreach (page('editions')->children() as $pastEdition) : ?>
-        <?php if ($pastEdition->startDate()->date('c') < $today) :?> 
+    <?php foreach (page('editions')->children()->filterBy('startDate','<',$today)->limit(1) as $pastEdition) : ?>
             <div class="container smb">
                 <div class="row">
                     <div class="col-md-12 center">
-                        <h1>Retour sur <?php echo $pastEdition->title(); ?></h1>
+                        <h1>Dernière édition</h1>
                     </div>
                     <div class="col-md-4 col-xs-12">
                         <?php if($image = $pastEdition->images()->sortBy('sort', 'asc')->first()): ?>
@@ -26,15 +25,22 @@
             <h3 class="center">Projets</h3>
             <div class="row">
                 <?php $thetag=$pastEdition->projectLabel() ?>
-                <?php foreach(page('projects')->children()->filterBy('tags',$thetag,',') as $project): ?>
+                <?php foreach(page('projets')->children()->filterBy('tags',$thetag,',') as $project): ?>
                     <div class="col-md-4 col-sm-6">
                         <div class="project-thumb">
                             <a href="<?php echo $project->url() ?>">
                             <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
-                            <img src="<?php echo $image->url() ?>" alt="<?php echo $project->title()->html() ?>" class="img-responsive">
+                                <?php $cover = $image->url(); ?>
+                            <?php else : ?>
+                                <?php $cover = $site->url().'/assets/images/defaut.jpg' ?>
                             <?php endif ?>
+                            <div class="thumb-image" style="background-image:url(<?php echo $cover ?>)">
+                            </div>
+                            <div class="thumb-title">
+                                <h3><?php echo $project->title() ?></h3>
+                            </div>
                             <div class="project-thumb-title">
-                                <h4><?php echo $project->title()->html() ?> - <?php echo $project->baseline()->excerpt(80) ?></h4>
+                                <?php echo $project->baseline()->excerpt(80) ?>
                             </div>
                             </a>
                         </div>
@@ -43,22 +49,19 @@
             </div><!-- portfolio -->
         </div><!-- portfolio container -->
         <div class="container">
-            <h4 class="center">Merci à nos partenaires, qui ont rendu cette édition possible    </h4>
+            <h4 class="center">Avec le soutien de :</h4>
             <div class="row">
-                <?php foreach ($pastEdition->children('partner') as $partner) : ?>
-                    <div class="col-md-3 col-xs-6 col-sm-4 smt">
+                <?php foreach ($pastEdition->children()->filterBy('template','partner') as $partner) : ?>
+                    <div class="col-md-3 col-xs-6 col-sm-4 smt partner">
                         <a href="<?php echo $partner->partnerLink() ?>">
-                        <?php if($image = $partner->images()->sortBy('sort', 'asc')->first()): ?>
-                        <img src="<?php echo $image->url() ?>" alt="<?php echo $partner->title()->html() ?>" class="img-responsive">
-                        <?php endif ?>
+                            <?php if($image = $partner->images()->first()): ?>
+                                <img src="<?php echo $image->url() ?>" alt="<?php echo $partner->title()->html() ?>" class="img-responsive">
+                            <?php endif ?>
                         </a>
                     </div>
                 <?php endforeach ?>
             </div>
         </div>
 
-
-        <?php endif ?>
     <?php endforeach ?>
 </div>
-<hr>
