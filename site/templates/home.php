@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<?php snippet('head') ?>
+<?php snippet('head2') ?>
 
 <div id="godown" class="fa fa-arrow-down"></div>
 

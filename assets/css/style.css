@@ -45,14 +45,6 @@
  	-moz-transition: opacity .5s ease-in-out;
   	-webkit-transition: opacity .5s ease-in-out;
 }
-#headerwrap {
-	background-image: url("/assets/images/header.jpg");
-	background-position: center;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-	background-size: cover;
-}
 #thankswrap {
 	background-image: url("/assets/img/header_nous.jpg");
 	text-align:center;
@@ -87,6 +79,9 @@
 .smt {
 	margin-top: 10px;
 }
+.bmt {
+	margin-top: 45px;
+}
 .smb {
 	margin-bottom: 10px;
 }
@@ -105,6 +100,9 @@
 .pt {
 	padding-top: 15px;
 }
+.pbt {
+	padding-top: 45px;
+}
 .lpt {
 	padding-top: 40px;
 }
@@ -120,7 +118,11 @@
 .center {
 	text-align: center;
 }
-
+.item {
+	min-height: 550px;
+	background-size: cover; 
+	background-position: center center;
+}
 .responsive-video {
 position: relative;
 padding-bottom: 56.25%;
@@ -390,22 +392,34 @@ a:focus {
 	SITE WRAPS
 ################################################################# */
 
+#carousel {
+	background-color: #efefef;
+}
+
 #headerwrap {
-	background-color: #000000;
-	min-height: 550px;
-	padding-top: 100px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding-top: 150px;
 	padding-bottom: 40px;
 	text-align: center;
+	pointer-events: none;
+}
+
+.carousel-control, .btn {
+    pointer-events:all;
 }
 
 #headerwrap h3, h5 {
 	color: white;
 	font-weight: 400;
+	text-shadow: 0px 0px 12px rgba(0,0,0,0.6);
 }
 
 #headerwrap h1 {
 	color: white;
 	margin-bottom: 25px;
+	text-shadow: 0px 0px 12px rgba(0,0,0,0.6);
 }
 
 #headerwrap .img-responsive {
