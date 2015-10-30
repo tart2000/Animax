@@ -1,4 +1,4 @@
-Title: le lancement de Animax
+Title: Lyon 2014 : lancement de Animax
 
 ----
 
@@ -20,7 +20,7 @@ Startdate: 2014-11-20
 
 ----
 
-Enddate: 2014-11-21
+Enddate: 
 
 ----
 

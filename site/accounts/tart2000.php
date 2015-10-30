@@ -8,4 +8,5 @@ language: fr
 role: admin
 token: 9a1fe1c401be8992af92ba3f7c1a5a23ee1fd038
 history:
+  - editions/lyon-2014
   - collectif/thierry-picq

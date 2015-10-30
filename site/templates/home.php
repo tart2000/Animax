@@ -28,8 +28,11 @@
     </div>
 </div>
 
-
-<?php snippet('pastedition') ?>
+<div id="past-edition" class="lpt pb bmb bpb">
+    <?php $today=date('c'); ?>
+    <?php $pastEdition = page('editions')->children()->filterBy('startDate','<',$today)->first() ?>
+    <?php snippet('pastedition', array('pastEdition'=>$pastEdition)) ?>
+</div>
 
 <?php snippet('questions') ?>
 
