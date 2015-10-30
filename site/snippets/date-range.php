@@ -1,18 +1,18 @@
 <?php 
     date_default_timezone_set('UTC');
     setlocale(LC_ALL, 'fr_FR');
-    $d1 = $page->date('U','startDate'); 
-    $d2 = $page->date('U', 'endDate');
-    if ($page->endDate()->isEmpty()) {
+    $d1 = $edition->date('U','startDate'); 
+    $d2 = $edition->date('U', 'endDate');
+    if ($edition->endDate()->isEmpty()) {
         # No second date
         echo strftime('%e %B %G',$d1);
-    } elseif ($page->date('Y-m-d','startDate') === $page->date('Y-m-d','endDate')) {
+    } elseif ($edition->date('Y-m-d','startDate') === $edition->date('Y-m-d','endDate')) {
         # Same day
         echo strftime('%e %B %G',$d1);
-    } elseif ($page->date('Y-m','startDate') === $page->date('Y-m','endDate')) {
+    } elseif ($edition->date('Y-m','startDate') === $edition->date('Y-m','endDate')) {
         # Same calendar month
         echo strftime('%e',$d1) . strftime('/%e %B %G',$d2);
-    } elseif ($page->date('Y','startDate') === $page->date('Y','endDate')) {
+    } elseif ($edition->date('Y','startDate') === $edition->date('Y','endDate')) {
         # Same calendar year
         echo strftime('%e %B',$d1) . strftime(' / %e %B %G',$d2);
     } else {

@@ -8,7 +8,7 @@
             <?php if($image = $pastEdition->images()->sortBy('sort', 'asc')->first()): ?>
                 <img src="<?php echo $image->url() ?>" alt="<?php echo $pastEdition->title()->html() ?>" class="img-responsive">
             <?php endif ?>
-            <h2><?php echo $pastEdition->location() ?>, <?php echo $pastEdition->date('j', 'startDate') ?> - <?php echo $pastEdition->date('j M Y', 'endDate') ?></h2><br/>
+            <h4><?php echo $pastEdition->location() ?>, <?php snippet('date-range', array('edition'=>$pastEdition)) ?></h4><br/>
             <div class="clearfix"></div>
             <p><?php echo $pastEdition->text()->kirbytext() ?></p>
             <a href="<?php echo $pastEdition->url() ?>" class="btn btn-theme">Voir les projets</a>

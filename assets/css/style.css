@@ -94,6 +94,9 @@
 .bmr {
 	margin-right: 20px;
 }
+.ml {
+	margin-left: 10px;
+}
 .mb {
 	margin-bottom: 30px;
 }
@@ -116,7 +119,7 @@
 	padding-bottom: 45px;
 }
 .right {
-	float: right;
+	text-align: right;
 }
 .center {
 	text-align: center;
@@ -232,6 +235,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
+}
+h2 {
+    margin-top: 12px;
 }
 
 p { 
@@ -380,6 +386,18 @@ a:focus {
 
 .mt {
 	margin-top: 60px;
+}
+.smt {
+	margin-top: 10px;
+}
+.smb {
+	margin-bottom: 10px;
+}
+.spt {
+	padding-top: 10px; 
+}
+.spb {
+	padding-bottom: 10px;
 }
 
 .hline {

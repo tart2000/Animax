@@ -6,7 +6,7 @@ Text: Animax est reparti pour une seconde édition ! Et après, un texte qui dit
 
 ----
 
-Location: 
+Location: Valpréland
 
 ----
 
@@ -30,4 +30,4 @@ Vimeolink:
 
 ----
 
-Locationlink: 
+Locationlink: http://valpre.fr
