@@ -4,10 +4,11 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-5">
-                <h4>A propos</h4>
-                <div class="hline-w"></div>
-                <p><?php echo $site->title() ?></p>
-                <p>Notre site est construit avec <a href="http://getkirby.com/" target="_blank">Kirby</a></p>
+                <h4><?php echo page('editions')->title() ?></h4>
+                <?php foreach (page('editions')->children() as $ed) : ?>
+                    <a href="<?php echo $ed->url() ?>"><?php echo $ed->title() ?></a></br>
+                <?php endforeach ?> 
+                <div class="clearfix"></div>
                 <p><a href="https://github.com/tart2000/animax"><i class="fa fa-github"></i></a></p>
             </div>
             <div class="col-sm-2 centered">

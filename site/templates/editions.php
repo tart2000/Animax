@@ -2,33 +2,29 @@
 
 
 
-  <main class="main" role="main">
+<main class="main mt" role="main">
 
-    <div class="container mt">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="text">
-                  <h1><?php echo $page->title()->html() ?></h1>
-                  <?php echo $page->text()->kirbytext() ?>
-                </div>
-            </div>
-        </div>
+  <?php $today=date('c'); ?>
+  <?php $nextEditions = page('editions')->children()->filterBy('startDate','>',$today) ?>
+  <?php foreach ($nextEditions as $nextEdition) : ?>
+    <?php snippet('nextedition', array('nextEdition'=>$nextEdition)) ?>
+  <?php endforeach ?>
 
-    </div>
-    <?php $today=date('c'); ?>
-<hr>
-<!-- éditions passées -->
-<h1>Editions passées</h1>
-<?php $pastEditions = $page->children()->filterBy('endDate','<',$today) ?>
-<?php $count = 1 ?>
-<?php foreach ($pastEditions as $edition) : ?>
-  	<?php snippet('pastedition', array('pastEdition' => $edition)) ?>
-    <!-- séparation intermédiare -->
-    <?php e($count<$pastEditions->count(),'<hr>') ?>
-    <?php $count++ ?>
-<?php endforeach ?>
+  <hr>
+  
+  <!-- éditions passées -->
+  <div class="center">
+    <em>Éditions passées</em>
+  </div>
+  <?php $pastEditions = $page->children()->filterBy('endDate','<',$today) ?>
+  <?php $count = 1 ?>
+  <?php foreach ($pastEditions as $edition) : ?>
+    	<?php snippet('pastedition', array('pastEdition' => $edition)) ?>
+      <!-- séparation intermédiare -->
+      <?php e($count<$pastEditions->count(),'<hr>') ?>
+      <?php $count++ ?>
+  <?php endforeach ?>
 
-
-  </main>
+</main>
 
 <?php snippet('footer') ?>

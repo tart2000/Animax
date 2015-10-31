@@ -4,7 +4,11 @@
 
 <div id="godown" class="fa fa-arrow-down"></div>
 
-<?php snippet('nextedition') ?>
+<div id="next-edition" class="lpt pb">
+    <?php $today=date('c'); ?>
+    <?php $nextEdition = page('editions')->children()->filterBy('startDate','>',$today)->first() ?>
+    <?php snippet('nextedition', array('nextEdition'=>$nextEdition)) ?>
+</div>
 
 <div class="container mb">
     <div class="row">
@@ -29,7 +33,6 @@
 </div>
 
 <div id="past-edition" class="lpt pb bmb bpb">
-    <?php $today=date('c'); ?>
     <?php $pastEdition = page('editions')->children()->filterBy('startDate','<',$today)->first() ?>
     <?php snippet('pastedition', array('pastEdition'=>$pastEdition)) ?>
 </div>

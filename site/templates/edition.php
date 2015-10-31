@@ -1,21 +1,26 @@
 <?php snippet('header') ?>
 
-<main class="main" role="main">
+<main class="main mt" role="main">
 
   <?php if ($page->date('U','startDate')  > date('U')) : ?>
   <!-- Future event -->
-  <div class="container mt smb">
+  <div class="container smb">
     <div class="row">
       <div class="col-sm-12 center">
         <h1><?php echo $page->title() ?></h1>
       </div>
       <div class="col-md-3">
-        <?php if($image = $page->images()->sortBy('sort', 'asc')->first()): ?>
+        <?php if($page->postimage() != ''): ?>
+          <?php $image = $page->postimage()->toFile(); ?>
             <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>" class="img-responsive">
         <?php endif ?>
         <div class="right">
           <h4 class="up spt"><i class="fa fa-calendar mr"></i> <?php snippet('date-range', array('edition'=>$page)) ?></h4>
-          <h4 class="up"><i class="fa fa-map-marker mr"></i> <?php echo $page->location() ?></h4>      
+          <h4 class="up">
+            <?php e($page->locationLink() != '','<a href="'.$page->locationLink().'">') ?> 
+              <i class="fa fa-map-marker mr"></i> <?php echo $page->location() ?>
+            <?php e($page->locationLink() != '','</a>') ?>
+          </h4>      
           <?php if ($page->inscriptions() != '') : ?>
             <a href="<?php echo $page->url() ?>" class="btn btn-theme btn-lg">Inscriptions</a>
           <?php endif ?>
@@ -38,27 +43,8 @@
 
   <?php else : ?>
   <!-- Past event -->
-    <div class="container mt smb">
-      <div class="row">
-        <div class="col-md-12 center smb">
-            <h1><?php echo $page->title() ?></h1>
-        </div>
-        <div class="col-md-4">
-            <?php if($image = $page->images()->sortBy('sort', 'asc')->first()): ?>
-                <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>" class="img-responsive">
-            <?php endif ?>
-            <?php $edition = $page ?>
-            <h3 class="up"><?php echo $page->location() ?>, <?php snippet('date-range',array('edition'=>$edition)) ?></h3>
-            <div class="clearfix"></div>
-            <p><?php echo $page->text()->kirbytext() ?></p>
-        </div>
-        <div class="col-md-8">
-            <div class="responsive-video">
-              <iframe src="//player.vimeo.com/video/<?php echo $page->Vimeolink() ?>?portrait=0" width="5" height="3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div> <!--/container -->
+  <?php snippet('pastedition', array('pastEdition'=>$page)) ?>
+  
   <?php endif ?>
 
   <!-- projets -->

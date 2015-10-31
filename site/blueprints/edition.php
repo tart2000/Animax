@@ -8,6 +8,12 @@ fields:
   title:
     label: Titre
     type:  text
+  postimage:
+    label: Image de couverture
+    type:  selector
+    mode:  single
+    types:
+        - image
   text:
     label: Texte
     type:  textarea
