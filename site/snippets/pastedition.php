@@ -8,10 +8,12 @@
             <?php if($image = $pastEdition->images()->sortBy('sort', 'asc')->first()): ?>
                 <img src="<?php echo $image->url() ?>" alt="<?php echo $pastEdition->title()->html() ?>" class="img-responsive">
             <?php endif ?>
-            <h4><?php echo $pastEdition->location() ?>, <?php snippet('date-range', array('edition'=>$pastEdition)) ?></h4><br/>
-            <div class="clearfix"></div>
+            <div class="">
+                <h4 class="up spt"><i class="fa fa-calendar mr"></i> <?php snippet('date-range', array('edition'=>$pastEdition)) ?></h4>
+                <h4 class="up"><i class="fa fa-map-marker mr"></i> <?php echo $pastEdition->location() ?></h4>
+            </div>
             <p><?php echo $pastEdition->text()->kirbytext() ?></p>
-            <a href="<?php echo $pastEdition->url() ?>" class="btn btn-theme">Voir les projets</a>
+            <a href="<?php echo $pastEdition->url() ?>" class="btn btn-theme">En savoir plus</a>
         </div>
         <div class="col-md-8 col-xs-12">
             <div class="responsive-video">
@@ -19,18 +21,6 @@
           </div>
         </div>
     </div>
-</div>
-<div class="container">
-<h3 class="center">Projets</h3>
-    <div class="row">
-        <?php $thetag=$pastEdition->projectLabel() ?>
-        <?php foreach(page('projets')->children()->filterBy('tags',$thetag,',') as $project): ?>
-            <?php snippet('project', array('project'=>$project)) ?>
-        <?php endforeach ?>
-    </div><!-- portfolio -->
-</div><!-- portfolio container -->
-<div class="center bmt">
-    <a href="<?php echo $pastEdition->url() ?>">En savoir plus</a>
 </div>
 
 

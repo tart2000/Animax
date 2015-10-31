@@ -8,9 +8,9 @@
                 <h1><?php echo $nextEdition->title(); ?></h1>
             </div>
             <div class="col-md-4 right spt">
-                <h4><i class="fa fa-calendar mr"></i><?php snippet('date-range', array('edition'=>$nextEdition)) ?></h4>
+                <h4 class="up"><i class="fa fa-calendar mr"></i><?php snippet('date-range', array('edition'=>$nextEdition)) ?></h4>
                 <?php if ($nextEdition->locationLink() != "") :?>
-                    <h4><i class="fa fa-map-marker mr"></i><?php echo $nextEdition->location() ?></h4>
+                    <h4 class="up"><i class="fa fa-map-marker mr"></i><?php echo $nextEdition->location() ?></h4>
                 <?php endif ?>
                 <div class="clearfix"></div>
                 <?php if ($nextEdition->inscriptions() != "") : ?>
