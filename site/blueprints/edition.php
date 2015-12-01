@@ -36,11 +36,16 @@ fields:
   inscriptions: 
     label: Lien pour inscriptions
     type: Url
+    width: 1/2
   projectLabel:
     label: Tag de projets
     type: text
     width: 1/2
-  vimeoLink: 
-    label: Code Vimeo (ex.457843392)
-    type: text
+  video: 
+    label: lien vers la vidéo
+    type: url
+    width: 1/2
+  photos:
+    label: lien vers les photos
+    type: url
     width: 1/2

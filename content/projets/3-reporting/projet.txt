@@ -6,7 +6,7 @@ Baseline: Système de reporting efficace, fédérateur, flash, impliquant, colla
 
 ----
 
-Videolink: 114807562
+Video: http://vimeo.com/114807562
 
 ----
 
@@ -37,3 +37,11 @@ En quoi la solution est innovante ?
 ----
 
 Tags: lyon-2014
+
+----
+
+Projectimage: reporting.jpg
+
+----
+
+Teamimage: team_reporting.jpg

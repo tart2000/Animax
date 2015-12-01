@@ -6,7 +6,7 @@ Baseline: boite a outil open source permettant le développement du Happy Work d
 
 ----
 
-Videolink: 114807558
+Video: http://vimeo.com/114807558
 
 ----
 
@@ -63,3 +63,11 @@ On aurait fait rayonner le concept happy work en développant une communauté d�
 ----
 
 Tags: lyon-2014
+
+----
+
+Projectimage: happy.jpg
+
+----
+
+Teamimage: team_happy.jpg

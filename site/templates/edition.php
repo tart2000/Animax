@@ -3,47 +3,47 @@
 <main class="main mt" role="main">
 
   <?php if ($page->date('U','startDate')  > date('U')) : ?>
-  <!-- Future event -->
-  <div class="container smb">
-    <div class="row">
-      <div class="col-sm-12 center">
-        <h1><?php echo $page->title() ?></h1>
-      </div>
-      <div class="col-md-3">
-        <?php if($page->postimage() != ''): ?>
-          <?php $image = $page->postimage()->toFile(); ?>
-            <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>" class="img-responsive">
-        <?php endif ?>
-        <div class="right">
-          <h4 class="up spt"><i class="fa fa-calendar mr"></i> <?php snippet('date-range', array('edition'=>$page)) ?></h4>
-          <h4 class="up">
-            <?php e($page->locationLink() != '','<a href="'.$page->locationLink().'">') ?> 
-              <i class="fa fa-map-marker mr"></i> <?php echo $page->location() ?>
-            <?php e($page->locationLink() != '','</a>') ?>
-          </h4>      
-          <?php if ($page->inscriptions() != '') : ?>
-            <a href="<?php echo $page->url() ?>" class="btn btn-theme btn-lg">Inscriptions</a>
-          <?php endif ?>
+    <!-- Future event -->
+    <div class="container smb">
+      <div class="row">
+        <div class="col-sm-12 center">
+          <h1><?php echo $page->title() ?></h1>
         </div>
-      </div>
-      <div class="col-md-9">
-        <div class="intro">
-          <?php echo $page->text()->kirbytext() ?>
-        </div>
-        <div>
-          <?php if($page->hasDocuments()) : ?>
-            <?php foreach ($page->documents() as $doc) : ?>
-              <a href="<?php echo $doc->url() ?>" download><?php echo $doc->name() ?> (<?php echo $doc->niceSize() ?>)</a></br>
-            <?php endforeach ?>
+        <div class="col-md-3 pt">
+          <?php if($page->postimage() != ''): ?>
+            <?php $image = $page->postimage()->toFile(); ?>
+              <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>" class="img-responsive">
           <?php endif ?>
+          <div class="right">
+            <h4 class="up spt"><i class="fa fa-calendar mr"></i> <?php snippet('date-range', array('edition'=>$page)) ?></h4>
+            <h4 class="up">
+              <?php e($page->locationLink() != '','<a href="'.$page->locationLink().'">') ?> 
+                <i class="fa fa-map-marker mr"></i> <?php echo $page->location() ?>
+              <?php e($page->locationLink() != '','</a>') ?>
+            </h4>      
+            <?php if ($page->inscriptions() != '') : ?>
+              <a href="<?php echo $page->url() ?>" class="btn btn-theme btn-lg">Inscriptions</a>
+            <?php endif ?>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="intro">
+            <?php echo $page->text()->kirbytext() ?>
+          </div>
+          <div>
+            <?php if($page->hasDocuments()) : ?>
+              <?php foreach ($page->documents() as $doc) : ?>
+                <a href="<?php echo $doc->url() ?>" download><?php echo $doc->name() ?> (<?php echo $doc->niceSize() ?>)</a></br>
+              <?php endforeach ?>
+            <?php endif ?>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
   <?php else : ?>
-  <!-- Past event -->
-  <?php snippet('pastedition', array('pastEdition'=>$page)) ?>
+    <!-- Past event -->
+    <?php snippet('pastedition', array('pastEdition'=>$page)) ?>
   
   <?php endif ?>
 

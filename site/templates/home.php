@@ -4,11 +4,14 @@
 
 <div id="godown" class="fa fa-arrow-down"></div>
 
-<div id="next-edition" class="lpt pb">
-    <?php $today=date('c'); ?>
-    <?php $nextEdition = page('editions')->children()->filterBy('startDate','>',$today)->first() ?>
-    <?php snippet('nextedition', array('nextEdition'=>$nextEdition)) ?>
-</div>
+<?php $today=date('c'); ?>
+<?php $nextEdition = page('editions')->children()->filterBy('startDate','>',$today)->first() ?>
+<?php if ($nextEdition != '') : ?>
+    <div id="next-edition" class="lpt pb">
+        <?php snippet('nextedition', array('nextEdition'=>$nextEdition)) ?>
+    </div>
+<?php endif ?>
+
 
 <div class="container mb">
     <div class="row">

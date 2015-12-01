@@ -6,7 +6,7 @@ Baseline: Application qui permet de solutionner les problèmes de l'entreprise e
 
 ----
 
-Videolink: 114807559
+Video: http://vimeo.com/114807559
 
 ----
 
@@ -36,3 +36,11 @@ En quoi est-ce innovant ?
 ----
 
 Tags: lyon-2014
+
+----
+
+Projectimage: eole.jpg
+
+----
+
+Teamimage: team_eole.jpg

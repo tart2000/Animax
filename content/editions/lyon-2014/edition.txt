@@ -28,7 +28,11 @@ Projectlabel: lyon-2014
 
 ----
 
-Vimeolink: 114807563
+Video: http://vimeo.com/114807563
+
+----
+
+Photos: 
 
 ----
 

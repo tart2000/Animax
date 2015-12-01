@@ -1,9 +1,10 @@
 <div class="col-md-4 col-sm-6">
     <div class="project-thumb">
         <a href="<?php echo $project->url() ?>">
-        <?php if($image = $project->images()->sortBy('sort', 'asc')->first()): ?>
-            <?php $cover = $image->url(); ?>
-        <?php else : ?>
+        <?php if($project->projectimage() != ''): ?>
+          <?php $image = $project->projectimage()->toFile(); ?>
+          <?php $cover = $image->url(); ?>
+        <?php else : ?>       
             <?php $cover = $site->url().'/assets/images/defaut.jpg' ?>
         <?php endif ?>
         <div class="thumb-image" style="background-image:url(<?php echo $cover ?>)">

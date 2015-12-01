@@ -6,7 +6,7 @@ Baseline: plateforme collaborative qui permet de mixer les talents d’une entre
 
 ----
 
-Videolink: 114796817
+Video: http://vimeo.com/114796817
 
 ----
 
@@ -31,3 +31,11 @@ L’objectif final étant d’utiliser 100% des compétences et talents des coll
 ----
 
 Tags: lyon-2014
+
+----
+
+Projectimage: shaker.jpg
+
+----
+
+Teamimage: team_shaker.jpg

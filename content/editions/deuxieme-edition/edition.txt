@@ -10,23 +10,19 @@ Location: Valpréland
 
 ----
 
-Startdate: 2015-11-19
+Startdate: 2016-03-18
 
 ----
 
-Enddate: 2015-11-20
+Enddate: 2016-03-21
 
 ----
 
-Inscriptions: http://plouf.com
+Inscriptions: http://eventbrite.com
 
 ----
 
 Projectlabel: lyon-2015
-
-----
-
-Vimeolink: 
 
 ----
 
@@ -35,3 +31,11 @@ Locationlink: http://valpre.fr
 ----
 
 Postimage: valpre.jpg
+
+----
+
+Video: 
+
+----
+
+Photos: 

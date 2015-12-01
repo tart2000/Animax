@@ -2,7 +2,7 @@
 <div class="container mb">
     <div class="row">
         <div class="col-md-offset-4 col-md-8">
-            <h1><?php echo $nextEdition->title(); ?></h1>
+            <h1><?php echo $nextEdition->title() ?></h1>
         </div>
         <div class="col-md-4 right spt">
             <h4 class="up"><i class="fa fa-calendar mr"></i><?php snippet('date-range', array('edition'=>$nextEdition)) ?></h4>

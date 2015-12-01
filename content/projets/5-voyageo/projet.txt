@@ -6,7 +6,7 @@ Baseline: Plateforme de partage et d’acquisition de connaissance de collaborat
 
 ----
 
-Videolink: 114807565
+Video: http://vimeo.com/114807565
 
 ----
 
@@ -52,3 +52,11 @@ Si nous avions eu 48 h de plus :
 ----
 
 Tags: lyon-2014
+
+----
+
+Projectimage: voyageo.jpg
+
+----
+
+Teamimage: team_voyageo.jpg
