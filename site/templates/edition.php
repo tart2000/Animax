@@ -40,7 +40,10 @@
         </div>
       </div>
     </div>
-
+    <?php $horaire = $page->children()->filterBy('template','*=','horaire')->first() ?>
+    <?php if ($horaire != '') : ?>
+      <?php snippet('schedule', array('horaire'=>$horaire)) ?>
+    <?php endif ?>
   <?php else : ?>
     <!-- Past event -->
     <?php snippet('pastedition', array('pastEdition'=>$page)) ?>

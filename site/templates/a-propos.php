@@ -16,7 +16,7 @@
   </main>
 
   <hr>
-  
-  <?php snippet('schedule') ?>
+  <?php $horaire = page('horaire') ?>
+  <?php snippet('schedule', array('horaire'=>$horaire)) ?>
 
 <?php snippet('footer') ?>

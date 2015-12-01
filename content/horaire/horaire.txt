@@ -1,0 +1,43 @@
+Title: Déroulé type d'un événement
+
+----
+
+Text: 
+
+Animax est un projet de 24 heures intenses pour réussir à créer des prototypes. L'objectif est de libérer les talents en entreprise, avec des solutions s'appuyant sur la technologie et la pluridisciplinarité.
+
+Les participants réunis en équipent produiront un prototype de démonstration d'une solution innovante qui puisse aider à transofrmer le management et créer durablement plus de confiance, d'autonomie, d'innovation, de coopération, de performance pour l'entreprise, de satisfaction et de bien-être pour l'Homme au travail.
+
+----
+
+Day1: 
+
+- 
+  heure: 18:00
+  nom: Accueil et découverte
+  desc: "Rendez-vous à l'espace de travail."
+- 
+  heure: 18:30
+  nom: Pitch des idées
+  desc: 'Un premier échange permettra de faire surgir et challenger vos idées. Le champ est vaste : recrutement, intégration, formation, rémunération, évaluation, entretiens, confiance, rigueur, reporting, interaction, information, agilité, liberté, autonomie, délégation, partenaires externes...'
+- 
+  heure: 20:00
+  nom: Construction des équipes
+  desc: "Les équipes se constituent sur l'envie, la motivation, la complémentarité des compétences, l'affinité avec l'idée, pourvu que vous soyez 6 avec au moins un designer développeur."
+
+----
+
+Day2: 
+
+- 
+  heure: 08:00
+  nom: La journée de travail commence !
+  desc: "On passe du concept au design de la pratique managériale innovante. Nos outils et notre staff vous aideront à faire émerger le blueprint de votre idée. Chaque équipe commence à réfléchir à son livrable : démonstration concrète d'une solution innovante en management (vidéo, story-board, scénario de formation, maquette d'espace ou d'appli, powerpoint...)"
+- 
+  heure: 12:00
+  nom: Crash test
+  desc: "On vérifie où on en est et on continue de construire ce l'on va livrer le soir même. On hésite pas à demander de l'aide !"
+- 
+  heure: 19:00
+  nom: Présentation des projets
+  desc: "Enfin, on présente ce qu'on a fait!"

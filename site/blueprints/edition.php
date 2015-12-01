@@ -2,7 +2,9 @@
 
 title: Edition
 pages: 
-  template: partner
+  template: 
+    - partner
+    - horaire
 files: true
 fields:
   title:
