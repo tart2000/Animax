@@ -11,7 +11,7 @@
             <?php endif ?>
             <div class="clearfix"></div>
             <?php if ($nextEdition->inscriptions() != "") : ?>
-                <a href="<?php echo $nextEdition->inscriptions() ?>" class="btn btn-theme btn-lg smt smb" target="_blank">Inscriptions</a>
+                <a href="<?php echo $nextEdition->url() ?>" class="btn btn-theme btn-lg smt smb">Inscriptions</a>
             <?php endif ?>
             <div class="clearfix"></div>
         </div>

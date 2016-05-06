@@ -21,7 +21,7 @@
         <?php if ($nextEdition = page('editions')->children()->filterBy('startDate','>',$today)->first()) : ?>
           <?php if ($nextEdition->inscriptions() != '') : ?>
             <li class="register">
-              <a href="<?php echo $nextEdition->inscriptions() ?>" target="_blank">Inscriptions</a>
+              <a href="<?php echo $nextEdition->url() ?>">Inscriptions</a>
             </li>
           <?php endif ?>
         <?php endif ?>

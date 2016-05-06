@@ -7,9 +7,6 @@ fields:
   	title:
 	    label: titre
 	    type:  text
-  	text: 
-	    label: Texte
-	    type: textarea
  	day1:
 	    label: Premier jour
 	    type: structure

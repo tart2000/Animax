@@ -18,7 +18,7 @@
                 <a href="http://twitter.com/AnimaxLab" class="btn-social btn-outline" target="_blank"><i class="fa fa-twitter"></i></a>
                 <a href="http://www.linkedin.com/company/animaxlab" class="btn-social btn-outline" target="_blank"><i class="fa fa-linkedin"></i></a>
                 <div class="spacing"></div>
-                <a href="http://www.em-lyon.com/"><img src="/assets/images/emlyon.gif" class="img-responsive"></a>
+                <a href="http://www.em-lyon.com/"><img src="/assets/images/Emlyon2016.gif" class="img-responsive"></a>
                 </div>
                 
             <div class="col-sm-5">

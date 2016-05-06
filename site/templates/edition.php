@@ -22,7 +22,7 @@
               <?php e($page->locationLink() != '','</a>') ?>
             </h4>      
             <?php if ($page->inscriptions() != '') : ?>
-              <a href="<?php echo $page->url() ?>" class="btn btn-theme btn-lg">Inscriptions</a>
+              <a href="<?php echo $page->inscriptions() ?>" class="btn btn-theme btn-lg">Inscriptions</a>
             <?php endif ?>
           </div>
         </div>
@@ -42,8 +42,10 @@
     </div>
     <?php $horaire = $page->children()->filterBy('template','*=','horaire')->first() ?>
     <?php if ($horaire != '') : ?>
+      <hr>
       <?php snippet('schedule', array('horaire'=>$horaire)) ?>
     <?php endif ?>
+  
   <?php else : ?>
     <!-- Past event -->
     <?php snippet('pastedition', array('pastEdition'=>$page)) ?>

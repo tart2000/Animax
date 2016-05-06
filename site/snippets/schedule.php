@@ -4,7 +4,7 @@
     <div class="col-md-12 center">
         <h2><?php echo $horaire->title() ?></h2>
     </div>
-    <div class="col-md-5 col-sm-12">
+    <div class="col-md-6 col-md-offset-3 col-sm-12">
         <div class="content-tabs">
             <ul class="nav nav-tabs">
               <li class="active"><a href="#tab1" data-toggle="tab">Jour 1</a></li>
@@ -53,10 +53,6 @@
             </div>
         </div>
 
-    </div>
-    <div class="col-md-7 col-sm-12">
-        <h3>Présentation</h3>
-        <?php echo $horaire->text()->kirbytext() ?>    
     </div>
 
 </section>
